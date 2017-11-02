@@ -10,6 +10,8 @@ from raven.handlers.logging import SentryHandler
 
 import jeev
 
+logger = logging.getLogger(__name__)
+
 parser = argparse.ArgumentParser(prog='jeev', description='Jeev')
 
 subparsers = parser.add_subparsers(dest='command')
