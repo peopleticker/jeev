@@ -73,7 +73,7 @@ def _setup_sentry(config):
     if dsn:
         handler = SentryHandler(dsn)
         handler.setLevel(logging.ERROR)
-        setup_logging(SentryHandler)
+        setup_logging(handler)
 
 
 def run(ns):
