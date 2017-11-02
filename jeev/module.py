@@ -283,7 +283,7 @@ class Module(object):
             e = e.exception
 
         self.jeev.on_module_error(self, e)
-        logger.exception("Exception raised %r", e)
+        logger.error("Exception raised %r", e, exc_info=True)
 
     def _make_app(self):
         """
